@@ -1,0 +1,23 @@
+body {
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 20px;
+}
+
+.formulario {
+    display: flex;
+}
+.formEsquerda {
+    width: 50%;
+    float: left;
+}
+
+.formDireita {
+    width: 50%;
+    float: right;
+    align-content: center;
+}
