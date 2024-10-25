@@ -128,12 +128,12 @@ function App() {
 
         <div className='formDireita'>
           {dados.nome || dados.email || dados.logadouro || dados.numero || dados.bairro || dados.cidade ? (<h2>Dados informados</h2>) : ''}
-          <strong>Nome: </strong>{dados.nome} <br />
-          <strong>E-mail: </strong>{dados.email} <br />
-          <strong>Logadouro: </strong>{dados.logadouro} <br />
-          <strong>Número: </strong>{dados.numero} <br />
-          <strong>Bairro: </strong>{dados.bairro} <br />
-          <strong>Cidade:</strong>{dados.cidade} <br />
+          {dados.nome ?  (<strong>Nome: </strong>) : ''} {dados.nome} {dados.nome ?  (<br />) : ''}
+          {dados.email ?  (<strong>E-mail: </strong>) : ''} {dados.email} {dados.email ?  (<br />) : ''}
+          {dados.logadouro ?  (<strong>Logadouro: </strong>) : ''} {dados.logadouro} {dados.logadouro ?  (<br />) : ''}
+          {dados.numero ?  (<strong>Número: </strong>) : ''} {dados.numero} {dados.numero ?  (<br />) : ''}
+          {dados.bairro ?  (<strong>Bairro: </strong>) : ''} {dados.bairro} {dados.bairro ?  (<br />) : ''}
+          {dados.cidade ?  (<strong>Cidade:</strong>) : ''} {dados.cidade} {dados.cidade ?  (<br />) : ''}
         </div>
       </div>
       <br />
