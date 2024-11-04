@@ -1,0 +1,108 @@
+
+.formulario {
+    display: flex;
+}
+.form-esquerda {
+    width: 50%;
+    float: left;
+}
+
+.form-direita {
+    width: 50%;
+    float: right;
+    align-content: center;
+}
+
+.form-lista input{
+    margin-left: 10px;
+    width: 20%;
+}
+.form-lista button{
+    margin-left: 10px;
+}
+
+.lista-tarefas li {
+    padding: 5px;
+}
+
+.lista-tarefas ul button {
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	color:#666666;
+	font-weight:bold;
+}
+
+.lista-tarefas ul button:hover {
+	background-color:#f6f6f6;
+}
+
+.container-nutri img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.blog-nutricao h1 {
+    text-align: center;
+
+}
+
+.container-nutri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: #f4f4f4; */
+}
+
+.container-nutri div {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.container-nutri div:hover {
+    cursor: pointer;
+}
+
+.container-nutri img {
+    width: 200px;
+    /* height: auto; */
+ 
+    border-radius: 8px 8px 0 0;
+}
+
+.container-nutri h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+   
+}
+
+.container-nutri span {
+    display: block;
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .container-nutri {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-nutri div {
+        width: 90%;
+    }
+}

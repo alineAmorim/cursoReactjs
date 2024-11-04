@@ -1,0 +1,29 @@
+header {
+    background-color: #333;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+header a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #f0a500;
+}
+
+header a:first-of-type {
+    margin-left: 0;
+}
